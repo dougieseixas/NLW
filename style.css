@@ -14,12 +14,76 @@ body {
   background-color: #121215;
   color: #eaeaee;
   font-family: "Roboto", sans-serif;
+  /* Especifica que o template será dividido em duas areas*/
+  display: grid;
+  /* Especifica qual o nome das areas as quais o template foi dividido */
+  grid-template-areas: "profile timeline";
+  /* A medidas fr define a medida das colunas ou seja 1 gração de 50% pra cada coluna*/
+  grid-template-columns: 1fr 1fr;
+  /* Define o tamanho da View Port como 100%*/
+  grid-template-rows: 100vh;
+}
+
+aside {
+  grid-area: profile;
+  display: flex;
+  flex-direction: column;
+  /* Alinha os itens da flex em da pagina na Horizontal*/
+  align-items: center;
+  /* Alinha os itens da flex em da pagina na Vertical*/
+  justify-content: center;
+  border-right: 1px solid;
+  /* O um no final do parametro border image define opacidade*/
+  border-image: linear-gradient(#727275, #2c2c31), 1;
+  gap: 20px;
+  background-image: url(assets/background.svg);
+  background-position: top right;
+  background-repeat: no-repeat;
+  background-size: auto 100%;
+}
+
+aside img:nth-child(2) {
+  width: 180px;
+  height: 180px;
+  border-radius: 50%;
+  border: 1.5px solid transparent;
+  background: linear-gradient(#d39e33, #ed5636, #633bbc), padding-box,
+    linear-gradient(180deg, #d39e33, #ed5636, #633bbc), border-box;
+}
+
+aside p {
+  text-align: center;
+  font-size: 32px;
+}
+
+aside span {
+  font-size: 12px;
+  color: #9e9ea0;
+}
+
+/* Não estava conseguindo colocar os emojis entao usei caracteres especiais
+e fiz a configuração css somente para esse item */
+.heart {
+  padding: 0.8px;
+  color: #633bbc;
+  font-size: 20px;
+}
+
+.profile {
+}
+
+nav {
+  grid-area: timeline;
+  margin-bottom: 64px;
+  /* Essa propriedade coloca um scroll no conteudo que nao cabe na tela*/
+  overflow-y: scroll;
 }
 
 .memory {
   display: flex;
   flex-direction: column;
   gap: 16px;
+  text-decoration: none;
   margin-bottom: 64px;
 }
 
