@@ -1,0 +1,48 @@
+@charset "UTF-8";
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+nav {
+  padding: 64px;
+}
+
+body {
+  background-color: #121215;
+  color: #eaeaee;
+  font-family: "Roboto", sans-serif;
+}
+
+.memory {
+  display: flex;
+  flex-direction: column;
+  gap: 16px;
+  margin-bottom: 64px;
+}
+
+.memory small {
+  color: #bebebf;
+  font-size: 12px;
+}
+
+.memory h1 {
+  color: #eaeaea;
+  font-size: 32px;
+  font-family: "Roboto";
+}
+
+.memory img {
+  width: 100%;
+  height: 280px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.memory p {
+  font-size: 18px;
+  color: #bebebf;
+  line-height: 28px;
+}
