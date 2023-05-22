@@ -4,7 +4,7 @@
  <img src=".github/Thumbnail.jpg" alt="Demonstrativo do Projeto" widht=100%>
 </p>
 
-<h2><i class="bi bi-cpu"></i> Tecnologias utilizadas</h2>
+## Tecnologias utilizadas
 
 - HTML5
 - CSS
